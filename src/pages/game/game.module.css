@@ -1,0 +1,193 @@
+/* Container principale del gioco */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #121212; /* Scuro per contrasto e stile moderno */
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Distanza tra le sezioni */
+  background-color: #1e1e2f; /* Sfondo scuro per l'intero contenuto */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.sectionGameImage {
+  color: #fff;
+  text-align: center;
+}
+
+.sectionGameImage h1 {
+  font-size: 36px;
+  color: #ffcc00;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.sectionGameImage p {
+  font-size: 18px;
+  color: #ddd;
+  margin: 10px 0;
+}
+
+/* Bottoni principali */
+.sectionGameImage button {
+  background-color: #ffcc00; /* Colore di sfondo giallo */
+  color: black; /* Testo nero */
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sectionGameImage button:hover {
+  background-color: #e6b800; /* Cambia il colore quando il bottone è hoverato */
+}
+
+.sectionGameImage .outline {
+  background-color: transparent;
+  border: 2px solid #ffcc00; /* Colore del bordo giallo */
+  color: #ffcc00; /* Testo giallo */
+  padding: 12px 24px;
+}
+
+.sectionGameImage .outline:hover {
+  background-color: #ffcc00; /* Colore di sfondo giallo al passaggio del mouse */
+  color: #1e1e2f; /* Testo scuro */
+}
+
+/* Sezione informazioni del gioco */
+.sectionGameInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.sectionGameInfo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Immagine del gioco */
+.gameImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.gameImage img {
+  max-width: 600px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Bottoni preferiti e review */
+.favoriteButton,
+.reviewButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.favoriteButton {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.favoriteButton:hover {
+  background-color: #e6b800;
+}
+
+.favoriteButton.remove {
+  background-color: #d9534f;
+}
+
+.favoriteButton.remove:hover {
+  background-color: #c9302c;
+}
+
+.reviewButton {
+  background-color: #009688;
+  color: black;
+}
+
+.reviewButton:hover {
+  background-color: #00796b;
+}
+
+/* Azioni preferiti e review */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 300px) {
+  .game {
+    padding: 20px;
+  }
+
+  .sectionGameImage h1 {
+    font-size: 28px;
+  }
+
+  .sectionGameImage p {
+    font-size: 16px;
+  }
+
+  .favoriteButton,
+  .reviewButton {
+    padding: 10px 10px;
+    font-size: 13px;
+  }
+
+  .sectionGameInfo img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .gameImage img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .game {
+    padding: 15px;
+  }
+
+  .sectionGameImage h1 {
+    font-size: 22px;
+  }
+
+  .sectionGameImage p {
+    font-size: 14px;
+  }
+
+  .favoriteButton,
+  .reviewButton {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+
+  .gameImage img {
+    max-width: 100%;
+    height: auto;
+  }
+}

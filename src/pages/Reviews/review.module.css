@@ -1,0 +1,102 @@
+.review_block {
+  max-width: 1000px; /* Aumentato il max-width per renderlo più largo */
+  margin: 110px auto;
+  padding: 40px; /* Aumentato il padding per più spazio all'interno */
+  color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  position: relative; /* Cambiato 'center' a 'relative' per migliorare il posizionamento */
+}
+
+.review_block h1 {
+  font-size: 36px; /* Aumentato la dimensione del font per il titolo */
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.review_block a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.review_block a:hover {
+  text-decoration: underline;
+}
+
+.review_block form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Aumentato il gap tra gli elementi del form */
+  padding: 30px; /* Aumentato il padding per il form */
+  border-radius: 10px;
+
+}
+
+.review_block fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Aumentato il gap per una spaziatura maggiore */
+}
+
+.review_block label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: bold;
+  color: #ddd;
+  font-size: 18px; /* Aumentata la dimensione del font per le etichette */
+}
+
+.review_block input,
+.review_block textarea {
+  padding: 15px; /* Aumentato il padding per maggiore spazio nei campi di input */
+  border-radius: 8px; /* Cambiato il border-radius per un aspetto più arrotondato */
+  border: none;
+  font-size: 18px; /* Aumentata la dimensione del font per i campi di input */
+  background: #3a3a55;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.review_block input:focus,
+.review_block textarea:focus {
+  outline: 2px solid #ffcc00;
+}
+
+.review_block textarea {
+  resize: vertical;
+  min-height: 160px; /* Aumentato l'altezza minima per il textarea */
+}
+
+.review_block input[type="submit"] {
+  cursor: pointer;
+  background: #ffcc00;
+  color: #1e1e2f;
+  font-weight: bold;
+  padding: 14px; /* Aumentato il padding per il pulsante */
+  font-size: 18px; /* Aumentata la dimensione del font per il pulsante */
+  transition: 0.3s ease-in-out;
+  border-radius: 8px; /* Aggiunto un border-radius per una forma arrotondata */
+}
+
+.review_block input[type="submit"]:hover {
+  background: #e6b800;
+}
+
+@media (max-width: 600px) {
+  .review_block {
+    max-width: 95%; /* Aumento della larghezza massima al 95% per schermi più piccoli */
+    padding: 20px; /* Aggiunto padding per uno spazio più ampio */
+  }
+
+  .review_block form {
+    padding: 20px; /* Aumentato il padding per un aspetto più spazioso */
+  }
+
+  .review_block input,
+  .review_block textarea {
+    font-size: 16px; /* Aumentato il font per una lettura migliore su dispositivi piccoli */
+  }
+}

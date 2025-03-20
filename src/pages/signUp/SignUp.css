@@ -1,0 +1,89 @@
+.signUpContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.signUpFormWrapper {
+  background: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUpForm input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+  background: #444;
+  color: #fff;
+}
+
+.signUpForm input:focus {
+  border-color: #6C63FF;
+  outline: none;
+}
+
+.submitButton {
+  background: #6C63FF;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.submitButton:hover {
+  background: #5a52e0;
+}
+
+.loginRedirect {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.loginLink {
+  color: #6C63FF;
+  text-decoration: none;
+}
+
+.loginLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .signUpFormWrapper {
+    padding: 20px;
+  }
+
+  .signUpForm input {
+    font-size: 14px;
+  }
+
+  .submitButton {
+    font-size: 14px;
+  }
+}

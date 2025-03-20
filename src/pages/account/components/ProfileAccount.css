@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #101010;
+  color: #fff;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #101010;
+  padding: 50px;
+}
+
+.form-widget {
+  background-color: #2a2a2a;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-widget:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+}
+
+.input-field:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button.primary {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.button.primary:hover {
+  background-color: #45a049;
+}
+
+.button.secondary {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.button.secondary:hover {
+  background-color: #e53935;
+}
+
+.button:disabled {
+  background-color: #757575;
+  cursor: not-allowed;
+}
+
+.List {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.List:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.List .empty-message {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.ListItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.ListItem:hover {
+  transform: scale(1.02);
+  background-color: #333;
+}
+
+.ListItemText .MuiTypography-root.primary {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.ListItemText .MuiTypography-root.secondary {
+  font-size: 16px;
+  color: #e0e0e0;
+  margin-top: 5px;
+}
+
+.ListItemText .MuiTypography-root.review-content {
+  font-size: 14px;
+  color: #bbb;
+  margin-top: 5px;
+}
+
+.ListItemText .MuiTypography-root.review-date {
+  font-size: 13px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.Divider {
+  border-top: 1px solid #444;
+  margin: 10px 0;
+}
+
+.Divider:hover {
+  border-top: 1px solid #aaa;
+}
+
+@media (max-width: 768px) {
+  .form-widget {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .List {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .input-field,
+  .button {
+    max-width: 100%;
+  }
+
+  .ListItemText .MuiTypography-root.primary {
+    font-size: 16px;
+  }
+
+  .ListItemText .MuiTypography-root.secondary {
+    font-size: 14px;
+  }
+}

@@ -1,4 +1,4 @@
-import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, Route } from "react-router";
 import Markup from "../layout";
 import Home from '../pages/home';
 import Genre from '../pages/genere';  

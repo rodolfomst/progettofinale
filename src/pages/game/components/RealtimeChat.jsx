@@ -1,6 +1,6 @@
 
 import { useEffect, useState, useRef } from "react";
-import style from "../Game.module.css";
+import style from "../game.module.css";
 import supabase from "../../../supabase/client";
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
@@ -21,6 +21,7 @@ export default function RealtimeChat({ game }) {
 
   const getInitialMessages = async () => {
     setLoadingInitial(true);
+ 
     const { data: messages, error } = await supabase
       .from("messages")
       .select()

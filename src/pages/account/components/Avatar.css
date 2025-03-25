@@ -1,0 +1,61 @@
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.avatar-image {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.avatar-image:hover {
+  transform: scale(1.05);
+}
+
+.avatar-placeholder {
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-button-wrapper {
+  margin-top: 15px;
+}
+
+.upload-button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upload-button:hover {
+  background-color: #45a049;
+}
+
+.upload-button.loading {
+  background-color: #f44336;
+}
+
+.upload-button.loading:hover {
+  background-color: #e53935;
+}

@@ -1,7 +1,8 @@
+
 import RealtimeChat from "./RealtimeChat";
 import { toast } from "sonner";
 import supabase from "../../../supabase/client";
-import "./chat.css";
+import "./Chat.css";
 
 export default function Chat({ game, session }) {
   async function handleMessageSubmit(event) {
@@ -28,4 +29,20 @@ export default function Chat({ game, session }) {
       }
     }
   }
+
+  return (
+    <>
+      <div className="chat_game_container">
+        <RealtimeChat game={game} />
+      </div>
+      <div className="message_form_wrapper">
+        <form onSubmit={handleMessageSubmit}>
+          <fieldset role="group">
+            <input type="text" name="message" placeholder="Scrivi un messaggio..." />
+            <input type="submit" value="Invia" />
+          </fieldset>
+        </form>
+      </div>
+    </>
+  );
 }

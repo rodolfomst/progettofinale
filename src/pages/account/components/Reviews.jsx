@@ -45,7 +45,7 @@ export default function Reviews() {
                       component="p"
                       variant="body2"
                       sx={{
-                        color: "white", // Colore bianco per il nome del gioco
+                        color: "white",  
                       }}
                     >
                       {review.game_name}
@@ -58,7 +58,7 @@ export default function Reviews() {
                       component="p"
                       variant="body2"
                       sx={{
-                        color: "white", // Colore bianco per il titolo della recensione
+                        color: "white", 
                       }}
                     >
                       {review.review_title}
@@ -67,7 +67,7 @@ export default function Reviews() {
                       component="p"
                       variant="body2"
                       sx={{
-                        color: "white", // Colore bianco per il contenuto della recensione
+                        color: "white", 
                       }}
                     >
                       {review.review_content}
@@ -76,7 +76,7 @@ export default function Reviews() {
                       component="p"
                       variant="body2"
                       sx={{
-                        color: "gray", // Colore grigio per la data
+                        color: "gray", 
                       }}
                     >
                       Aggiunta il: {formatDate(review.created_at)}
@@ -85,7 +85,7 @@ export default function Reviews() {
                 }
               />
             </ListItem>
-            <Divider sx={{ backgroundColor: "white" }} /> {/* Divider bianco */}
+            <Divider sx={{ backgroundColor: "white" }} />
           </>
         ))}
     </List>

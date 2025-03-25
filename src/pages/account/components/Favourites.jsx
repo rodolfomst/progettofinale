@@ -14,7 +14,7 @@ import './ProfileAccount.css';
 export default function Favourites() {
   const { fav } = useContext(FavContext);
 
-  // Aggiungi un controllo che verifichi se fav è un array valido
+ 
   if (!Array.isArray(fav)) {
     return <p>Errore nel caricamento dei preferiti.</p>;
   }

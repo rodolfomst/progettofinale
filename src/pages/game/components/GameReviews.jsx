@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+
 import { useState } from "react";
 import { useEffect } from "react";
 import supabase from "../../../supabase/client";

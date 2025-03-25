@@ -1,15 +1,15 @@
 .review_block {
-  max-width: 1000px; /* Aumentato il max-width per renderlo più largo */
+  max-width: 1000px;
   margin: 110px auto;
-  padding: 40px; /* Aumentato il padding per più spazio all'interno */
+  padding: 40px;
   color: #fff;
   border-radius: 12px;
   text-align: center;
-  position: relative; /* Cambiato 'center' a 'relative' per migliorare il posizionamento */
+  position: relative;
 }
 
 .review_block h1 {
-  font-size: 36px; /* Aumentato la dimensione del font per il titolo */
+  font-size: 36px;
   margin-bottom: 20px;
   color: #ffcc00;
 }
@@ -27,17 +27,16 @@
 .review_block form {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Aumentato il gap tra gli elementi del form */
-  padding: 30px; /* Aumentato il padding per il form */
+  gap: 20px;
+  padding: 30px;
   border-radius: 10px;
-
 }
 
 .review_block fieldset {
   border: none;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Aumentato il gap per una spaziatura maggiore */
+  gap: 20px;
 }
 
 .review_block label {
@@ -46,15 +45,15 @@
   text-align: left;
   font-weight: bold;
   color: #ddd;
-  font-size: 18px; /* Aumentata la dimensione del font per le etichette */
+  font-size: 18px;
 }
 
 .review_block input,
 .review_block textarea {
-  padding: 15px; /* Aumentato il padding per maggiore spazio nei campi di input */
-  border-radius: 8px; /* Cambiato il border-radius per un aspetto più arrotondato */
+  padding: 15px;
+  border-radius: 8px;
   border: none;
-  font-size: 18px; /* Aumentata la dimensione del font per i campi di input */
+  font-size: 18px;
   background: #3a3a55;
   color: white;
   transition: 0.3s ease-in-out;
@@ -67,7 +66,7 @@
 
 .review_block textarea {
   resize: vertical;
-  min-height: 160px; /* Aumentato l'altezza minima per il textarea */
+  min-height: 160px;
 }
 
 .review_block input[type="submit"] {
@@ -75,10 +74,10 @@
   background: #ffcc00;
   color: #1e1e2f;
   font-weight: bold;
-  padding: 14px; /* Aumentato il padding per il pulsante */
-  font-size: 18px; /* Aumentata la dimensione del font per il pulsante */
+  padding: 14px;
+  font-size: 18px;
   transition: 0.3s ease-in-out;
-  border-radius: 8px; /* Aggiunto un border-radius per una forma arrotondata */
+  border-radius: 8px;
 }
 
 .review_block input[type="submit"]:hover {
@@ -87,16 +86,16 @@
 
 @media (max-width: 600px) {
   .review_block {
-    max-width: 95%; /* Aumento della larghezza massima al 95% per schermi più piccoli */
-    padding: 20px; /* Aggiunto padding per uno spazio più ampio */
+    max-width: 95%;
+    padding: 20px;
   }
 
   .review_block form {
-    padding: 20px; /* Aumentato il padding per un aspetto più spazioso */
+    padding: 20px;
   }
 
   .review_block input,
   .review_block textarea {
-    font-size: 16px; /* Aumentato il font per una lettura migliore su dispositivi piccoli */
+    font-size: 16px;
   }
 }

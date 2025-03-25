@@ -32,7 +32,7 @@ export default function Review() {
           review_title: title,
           review_content: content,
           game_id: Number(id),
-          profile_id: session.user.id, // Usa 'profile_id' invece di 'user_id'
+          profile_id: session.user.id, 
         },
       ]);
 
@@ -49,10 +49,8 @@ export default function Review() {
     <div className={styles.review_block}>
       {loading && (
         <img
-          style={{ width: "100%", height: "100vh" }}
-          alt="loading"
-          id="loadingImages"
-          src="https://i.imgur.com/LVHmLnb.gif"
+         
+         
         />
       )}
       {error && <h1>{error}</h1>}

@@ -1,16 +1,15 @@
-/* Container principale del gioco */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #121212; /* Scuro per contrasto e stile moderno */
+  background-color: #121212;
 }
 
 .game {
   display: flex;
   flex-direction: column;
-  gap: 40px; /* Distanza tra le sezioni */
-  background-color: #1e1e2f; /* Sfondo scuro per l'intero contenuto */
+  gap: 40px;
+  background-color: #1e1e2f;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   padding: 30px;
@@ -34,10 +33,9 @@
   margin: 10px 0;
 }
 
-/* Bottoni principali */
 .sectionGameImage button {
-  background-color: #ffcc00; /* Colore di sfondo giallo */
-  color: black; /* Testo nero */
+  background-color: #ffcc00;
+  color: black;
   font-size: 16px;
   padding: 12px 24px;
   border-radius: 8px;
@@ -47,22 +45,21 @@
 }
 
 .sectionGameImage button:hover {
-  background-color: #e6b800; /* Cambia il colore quando il bottone è hoverato */
+  background-color: #e6b800;
 }
 
 .sectionGameImage .outline {
   background-color: transparent;
-  border: 2px solid #ffcc00; /* Colore del bordo giallo */
-  color: #ffcc00; /* Testo giallo */
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
   padding: 12px 24px;
 }
 
 .sectionGameImage .outline:hover {
-  background-color: #ffcc00; /* Colore di sfondo giallo al passaggio del mouse */
-  color: #1e1e2f; /* Testo scuro */
+  background-color: #ffcc00;
+  color: #1e1e2f;
 }
 
-/* Sezione informazioni del gioco */
 .sectionGameInfo {
   display: flex;
   flex-direction: column;
@@ -78,7 +75,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Immagine del gioco */
 .gameImage {
   display: flex;
   justify-content: center;
@@ -92,7 +88,6 @@
   object-fit: cover;
 }
 
-/* Bottoni preferiti e review */
 .favoriteButton,
 .reviewButton {
   padding: 12px 24px;
@@ -130,14 +125,12 @@
   background-color: #00796b;
 }
 
-/* Azioni preferiti e review */
 .actions {
   display: flex;
   gap: 10px;
   margin-top: 15px;
 }
 
-/* Media query per dispositivi mobili */
 @media (max-width: 300px) {
   .game {
     padding: 20px;

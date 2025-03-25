@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router"; // Usa react-router-dom (al posto di react-router)
+import { Link } from "react-router"; 
 import styles from "../pages/genere/genere.module.css";
 
 const url = "https://api.rawg.io/api/genres?key=4325697e08ae47af9f63f693271a8c3a";
@@ -25,7 +25,7 @@ export default function Sidebar() {
             <li key={genre.id} className={styles.genreItem}>
               <Link to={`/games/${genre.slug}`} className={styles.genreLink}>
                 <img
-                  // Verifica se l'API restituisce un URL per l'immagine del genere
+                 
                   src={genre.image_background || `https://via.placeholder.com/100?text=${genre.name}`} 
                   alt={`${genre.name} icon`}
                   className={styles.genreImage}

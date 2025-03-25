@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import RealtimeChat from "./RealtimeChat";
 import { toast } from "sonner";
 import supabase from "../../../supabase/client";
@@ -29,6 +28,4 @@ export default function Chat({ game, session }) {
       }
     }
   }
-
-  
 }

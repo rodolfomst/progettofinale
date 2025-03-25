@@ -1,185 +1,176 @@
-/* General Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
- 
-    margin: 0;
-    padding: 3000px;
-    padding-top: 100px; /* Deve essere uguale all'altezza della navbar */
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  button {
-    cursor: pointer;
-    border: none;
-    background: none;
-  }
-  
-  /* Navbar */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 3000px;
+  padding-top: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 16px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f3c600;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #fff;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #444;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.searchBar input {
+  padding: 8px 15px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 30px;
+  transition: width 0.3s ease;
+}
+
+.searchBar input:focus {
+  outline: none;
+  width: 300px;
+}
+
+.searchBar button {
+  background-color: #f3c600;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchBar button:hover {
+  background-color: #e5b100;
+}
+
+.authButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.authButtons a {
+  color: white;
+  padding: 8px 16px;
+  background-color: #f3c600;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.authButtons a:hover {
+  background-color: #e5b100;
+}
+
+.avatarMenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.email {
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.email:hover {
+  color: #f3c600;
+}
+
+.MuiMenuItem-root {
+  color: black;
+  padding: 12px 20px;
+}
+
+.MuiMenuItem-root:hover {
+  background-color: #f3c600;
+  color: white;
+}
+
+.MuiTooltip-tooltip {
+  font-size: 14px;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+@media (max-width: 300px) {
   .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 16px 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-  }
-  
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #f3c600;
-    transition: color 0.3s ease;
-  }
-  
-  .logo:hover {
-    color: #fff;
-  }
-  
-  .searchBar {
-    display: flex;
-    align-items: center;
-    background-color: #444;
-    border-radius: 30px;
-    overflow: hidden;
-  }
-  
-  .searchBar input {
-    padding: 8px 15px;
-    border: none;
-    background-color: #444;
-    color: #fff;
-    font-size: 16px;
-    width: 250px;
-    border-radius: 30px;
-    transition: width 0.3s ease;
-  }
-  
-  .searchBar input:focus {
-    outline: none;
-    width: 300px;
-  }
-  
-  .searchBar button {
-    background-color: #f3c600;
-    color: black;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .searchBar button:hover {
-    background-color: #e5b100;
-  }
-  
-  .authButtons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .authButtons a {
-    color: white;
-    padding: 8px 16px;
-    background-color: #f3c600;
-    border-radius: 20px;
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .authButtons a:hover {
-    background-color: #e5b100;
-  }
-  
-  /* Avatar Menu */
-  .avatarMenu {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .email {
-    font-size: 14px;
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  .email:hover {
-    color: #f3c600;
-  }
-  
-  /* Menu Styles */
-  .MuiMenuItem-root {
-    color: black;
-    padding: 12px 20px;
-  }
-  
-  .MuiMenuItem-root:hover {
-    background-color: #f3c600;
-    color: white;
-  }
-  
-  /* Tooltip Styles */
-  .MuiTooltip-tooltip {
-    font-size: 14px;
-    color: white;
-   ;
-    border-radius: 5px;
-    padding: 8px 10px;
-  }
-  
-  /* Mobile Responsiveness */
-  @media (max-width: 300px) {
-    .navbar {
       padding: 10px 20px;
-    }
-  
-    .searchBar input {
-      width: 200px;
-    }
-  
-    .searchBar input:focus {
-      width: 250px;
-    }
-  
-    .logo {
-      font-size: 20px;
-    }
-  
-    .authButtons {
-      display: none;
-    }
   }
-  
+
+  .searchBar input {
+      width: 200px;
+  }
+
+  .searchBar input:focus {
+      width: 250px;
+  }
+
+  .logo {
+      font-size: 20px;
+  }
+
+  .authButtons {
+      display: none;
+  }
+}

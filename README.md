@@ -47,4 +47,4 @@ formati delle date
 Cartella Markup per la gestione del layout
 
 Link del progetto:
-http://localhost:5173/
+https://progettofinale-broa.vercel.app/

@@ -2,7 +2,7 @@
 import RealtimeChat from "./RealtimeChat";
 import { toast } from "sonner";
 import supabase from "../../../supabase/client";
-import "./Chat.css";
+import "./Chat-new.css";
 
 export default function Chat({ game, session }) {
   async function handleMessageSubmit(event) {
